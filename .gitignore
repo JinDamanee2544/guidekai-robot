@@ -1,3 +1,5 @@
 *.png
 *.html
 *.xml
+pabot_results
+.pabotsuitenames

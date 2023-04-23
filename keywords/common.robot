@@ -28,7 +28,11 @@ Open Browser at Guide Dashboard
 Clear Cookies
     Delete All Cookies
 
-Should Be at Guide Login
+Should Be at Login
+    ${CURRENT_URL}=    Get Location
+    Should Be Equal    ${CURRENT_URL}    ${PATH_LOGIN}
+
+Should Be at Dashboard
     ${CURRENT_URL}=    Get Location
     Should Be Equal    ${CURRENT_URL}    ${PATH_DASHBOARD}
 
@@ -39,3 +43,7 @@ Should Be at Guide's Create Post
 Should Be at Guide Create Success
     ${CURRENT_URL}=    Get Location
     Should Be Equal    ${CURRENT_URL}    ${PATH_POST_SUCCESS}
+
+Clear Text Field
+    [Arguments]    ${locator}
+    Press Keys    ${locator}    A+BACKSPACE

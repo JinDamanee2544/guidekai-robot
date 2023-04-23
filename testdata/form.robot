@@ -6,4 +6,5 @@ ${FORM_TRIP_FEE}                    1000
 ${FORM_MAX_PARTICIPANTS}            10
 ${FORM_CONTACT_INFO}                JohnDoe@gmail.com
 ${FORM_ERROR_FIELD_NOT_PROVIDED}
-...    You Must Fill In Every Input Field Before Submit The Form And Select At Least One Location And Tour Style.
+...                                 You Must Fill In Every Input Field Before Submit The Form And Select At Least One Location And Tour Style.
+${FORM_ERROR_FEE_LESS_THAN_30}      Max Participant Must Be Greater Than 0 And Fee Must Be Greater Than 30
