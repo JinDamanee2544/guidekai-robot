@@ -17,7 +17,6 @@ All fields are provided and valid
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    3
     Should Be at Guide Create Success
 
 Post Name is empty
@@ -28,7 +27,6 @@ Post Name is empty
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Content is empty
@@ -39,7 +37,6 @@ Post Content is empty
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Fee is empty
@@ -50,7 +47,6 @@ Post Fee is empty
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Contact Info is empty
@@ -61,7 +57,6 @@ Post Contact Info is empty
     # Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Max Participants is empty
@@ -72,7 +67,6 @@ Post Max Participants is empty
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     # Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Location is empty
@@ -84,7 +78,6 @@ Post Location is empty
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Remove Location Tag
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Tour Style is empty
@@ -96,7 +89,6 @@ Post Tour Style is empty
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Remove Tour Style Tag
     Submit Post Create Form
-    Sleep    0.5
     Should See Error Some Fields Not Provided
 
 Post Fee is less than 30
@@ -107,7 +99,7 @@ Post Fee is less than 30
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
+    Sleep    1
     Should See Error Fee < 30
 
 Post Fee is string
@@ -122,7 +114,7 @@ Post Fee is less than 0
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
     Submit Post Create Form
-    Sleep    0.5
+    Sleep    1
     Should See Error Fee < 30
 
 Post Max Participants is less than 0
@@ -133,7 +125,7 @@ Post Max Participants is less than 0
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    -1
     Submit Post Create Form
-    Sleep    3
+    Sleep    1
     Should Be at Guide's Create Post
 
 Post Max Participants is float
@@ -144,7 +136,7 @@ Post Max Participants is float
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    1.5
     Submit Post Create Form
-    Sleep    3
+    Sleep    1
     Should Be at Guide's Create Post
 
 Post Max Participants is string

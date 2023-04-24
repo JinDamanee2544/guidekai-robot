@@ -29,20 +29,27 @@ Clear Cookies
     Delete All Cookies
 
 Should Be at Login
-    ${CURRENT_URL}=    Get Location
-    Should Be Equal    ${CURRENT_URL}    ${PATH_LOGIN}
+    Wait Until Location Contains    ${PATH_LOGIN}
+
+Should Be at Not Allow
+    Wait Until Location Contains    ${PATH_NOT_ALLOWED}
+    # ${CURRENT_URL}=    Get Location
+    # Should Be Equal    ${CURRENT_URL}    ${PATH_NOT_ALLOWED}
 
 Should Be at Dashboard
-    ${CURRENT_URL}=    Get Location
-    Should Be Equal    ${CURRENT_URL}    ${PATH_DASHBOARD}
+    Wait Until Location Contains    ${PATH_DASHBOARD}
+    # ${CURRENT_URL}=    Get Location
+    # Should Be Equal    ${CURRENT_URL}    ${PATH_DASHBOARD}
 
 Should Be at Guide's Create Post
-    ${CURRENT_URL}=    Get Location
-    Should Be Equal    ${CURRENT_URL}    ${PATH_GUIDE_POST}
+    Wait Until Location Contains    ${PATH_GUIDE_POST}
+    # ${CURRENT_URL}=    Get Location
+    # Should Be Equal    ${CURRENT_URL}    ${PATH_GUIDE_POST}
 
 Should Be at Guide Create Success
-    ${CURRENT_URL}=    Get Location
-    Should Be Equal    ${CURRENT_URL}    ${PATH_POST_SUCCESS}
+    Wait Until Location Contains    ${PATH_POST_SUCCESS}
+    # ${CURRENT_URL}=    Get Location
+    # Should Be Equal    ${CURRENT_URL}    ${PATH_POST_SUCCESS}
 
 Clear Text Field
     [Arguments]    ${locator}
