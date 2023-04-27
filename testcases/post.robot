@@ -71,23 +71,23 @@ Post Max Participants is empty
 
 Post Location is empty
     [Tags]    missing one field
+    Remove Location Tag
     Insert Post Name    ${FORM_TRIP_NAME}
     Insert Post Content    ${FORM_TRIP_CONTENT}
     Insert Post Fee    ${FORM_TRIP_FEE}
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
-    Remove Location Tag
     Submit Post Create Form
     Should See Error Some Fields Not Provided
 
 Post Tour Style is empty
     [Tags]    missing one field
+    Remove Tour Style Tag
     Insert Post Name    ${FORM_TRIP_NAME}
     Insert Post Content    ${FORM_TRIP_CONTENT}
     Insert Post Fee    ${FORM_TRIP_FEE}
     Insert Post Contact Info    ${FORM_CONTACT_INFO}
     Insert Post Max Participants    ${FORM_MAX_PARTICIPANTS}
-    Remove Tour Style Tag
     Submit Post Create Form
     Should See Error Some Fields Not Provided
 

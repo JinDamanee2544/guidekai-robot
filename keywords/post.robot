@@ -68,7 +68,7 @@ Submit Post Create Form
     Click Button    //*[@id="__next"]/div/div[2]/div/div/form/button
 
 Remove Location Tag
-    Click Element At Coordinates    //*[@id="locations"]    26    0
+    Click Element At Coordinates    //*[@id="locations"]    27    0
 
 Remove Tour Style Tag
-    Click Element At Coordinates    //*[@id="locations"]    26    0
+    Click Element At Coordinates    //*[@id="tags"]    26    0
